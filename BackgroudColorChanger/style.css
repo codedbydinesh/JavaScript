@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.canvas{
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+.canvas h2{
+    text-align: center;
+}
+.grid{
+    display: grid;
+}
+.four-col{
+    grid-template-columns: repeat(4, 1fr);
+}
+.canvas .grid{
+    gap: 1rem;
+}
+.canvas .color-btn{
+    margin: 2rem 0;
+}
+.canvas .color-btn .btn{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+}
+#green{
+    background-color: green;
+}
+#blue{
+    background-color: blue;
+}
+#orange{
+    background-color: orange;
+}
+#cyan{
+    background-color: cyan;
+}
+
+@media (max-width:480px){
+    .four-col{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
