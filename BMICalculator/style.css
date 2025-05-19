@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    max-width: 768px;
+    margin: auto;
+    margin-top: 50px;
+}
+.container h1{
+    text-align: center;
+    margin: 15px 0;
+}
+p{
+    text-align: center;
+    margin: 10px 0;
+}
+form{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 50px 10px;
+}
+label{
+    font-size: 18px;
+    padding-right: 5px;
+}
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+#weight-guide h3{
+    text-align: center;
+}
+#result{
+    text-align: center;
+    margin: 10px 150px;
+    color: green;
+    background-color: rgb(230, 255, 230);
+
+}
+#msg{
+    text-align: center;
+    margin: 10px 150px;
+    color: green;
+    background-color: rgb(230, 255, 230);
+}
+
+input{
+    border: none;
+    background-color:#eee;
+    padding: 5px;
+}
+
+
+@media (min-width:641px) { 
+    .container{
+        max-width: 641px;
+    }
+    #msg{
+        margin: 10px 50px;
+    }
+    
+}
+
+@media (min-width:481px) { 
+    .container{
+        max-width: 481px;
+    }
+    #msg{
+        margin: 10px 40px;
+    }
+}
+@media (min-width:320px) { 
+    .container{
+        max-width: 320px;
+    }
+    #msg{
+        margin: 10px 30px;
+    }
+}
